@@ -1,0 +1,21 @@
+<p class="text-uppercase m-5">Save employe .</p>
+
+<div class="container">
+  <form (ngSubmit) = "onSubmit()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" [(ngModel)] = "employe.name" name="name" class="form-control" id="name">
+    </div>
+    <div class="mb-3">
+      <label for="prenom" class="form-label">Prénom</label>
+      <input type="text" [(ngModel)] = "employe.prenom" class="form-control" name="prenom" id="prenom">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email"  [(ngModel)] = "employe.email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
